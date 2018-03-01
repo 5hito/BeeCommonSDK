@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "BeeCommonSDK是集合基本使用功能"
   s.description  = <<-DESC
     0.0.1:基础功能
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.resources = 'lib/*.bundle'
 
   s.requires_arc = true
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/lib/BeeCommonLibrary.framework/Headers/" }
   s.ios.vendored_framework   = 'lib/BeeCommonLibrary.framework'
 
 end
