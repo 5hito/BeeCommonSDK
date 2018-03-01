@@ -55,6 +55,7 @@ UIImage* resizableImageWithImg(UIImage* img);
 UIImage* getImageFromViewByRect(UIView* view, CGRect rect);
 UIImage* getThumbImgFromImage(UIImage* image);
 UIImage* bundleImage(NSString* imgFile);
+UIImage* getHandleGrayImage(UIImage *sourceImage);
 
 #pragma mark 时间相关
 NSInteger getCurrentTime(void);

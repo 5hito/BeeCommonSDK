@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "集合基本使用功能"
   s.description  = <<-DESC
     0.0.x:基础功能合集使用
