@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "0.0.8"
+  s.version      = "0.1.0"
   s.summary      = "集合基本使用功能"
   s.description  = <<-DESC
-    0.0.x:基础功能合集使用
+    0.1.0:基础功能合集使用
                    DESC
 
   s.homepage     = "https://github.com/5hito/BeeCommonSDK"
@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
   s.frameworks = "AdSupport"
   s.requires_arc = true
 
-  s.resources = 'lib/*.bundle'
-  s.source_files = 'lib/Headers/*.h'
-  s.ios.vendored_libraries = 'lib/libBeeCommonLibrary.a'
+  s.resources = 'lib/Resources/*.bundle'
+  s.source_files = 'lib/Header/*.h'
+  s.ios.vendored_libraries = 'lib/libBeeCommonSDK.a'
 
 #s.ios.vendored_framework   = 'lib/BeeCommonLibrary.framework'
 
