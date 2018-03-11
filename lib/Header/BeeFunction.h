@@ -32,6 +32,7 @@ NSString* dictionaryTurnToString(NSDictionary* dic);
 #pragma mark 包相关
 NSString* appBundleIdentifier(void);
 NSString* appVersion(void);
+NSString* appName(void);
 BOOL systemVesionIsUp(CGFloat ver);
 NSInteger appVersionCompare(NSString *v1, NSString *v2);
 NSInteger appStoreAppVersionCompare(NSString *v1);
@@ -63,4 +64,13 @@ NSString* getTimeSince1970(void);
 NSString* getTimeStringByTimeInterval(NSInteger timeInterval);
 NSString* getTimeStringByString(NSString* timeString);
 NSString* getTimeString(NSInteger timeInterval);
+
+#pragma mark 文件操作
+NSDate* getFileCreateTimeDate(NSString* file);
+BOOL isOverDueFile(NSString* file, long overTime);
+BOOL isDefaultOverDueFile(NSString* file);
+
+#pragma mark 颜色处理
+//将颜色字符串转成UIColor #44a100 - > uicolor
+UIColor* colorWithHexString(NSString *stringToConvert);
 
