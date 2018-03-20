@@ -10,7 +10,7 @@
 @interface BeeNetWriter : NSObject
 
 //可外部设置加密值
-+ (void)setMD5Key:(NSString*)md5key;
+- (instancetype)initWithMD5:(NSString*)md5;
 
 - (void)appendInteger:(NSString*)key value:(NSInteger)value;
 - (void)appendInt64:(NSString *)key value:(long long)value;
