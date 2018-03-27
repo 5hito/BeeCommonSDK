@@ -18,6 +18,13 @@
             code \
             _Pragma("clang diagnostic pop")
 
+//方法调用警告
+#define Bee_Wundeclared_Selector(code) \
+        _Pragma("clang diagnostic push") \
+        _Pragma("clang diagnostic ignored \"-Wundeclared-selector\"") \
+        code \
+        _Pragma("clang diagnostic pop")
+
 //方法弃用告警
 #define Bee_Wdeprecated_Declarations(code) \
             _Pragma("clang diagnostic push") \
