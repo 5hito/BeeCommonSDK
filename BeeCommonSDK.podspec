@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "集合基本使用功能"
   s.description  = <<-DESC
     0.1.x:基础功能合集使用
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target    = '8.0'
   s.source       = { :git => "https://github.com/5hito/BeeCommonSDK.git", :tag => s.version.to_s }
 
-  s.frameworks = "AdSupport"
+  s.frameworks = "AdSupport", "WebKit"
   s.requires_arc = true
 
   s.resources = 'lib/Resources/*.bundle'
