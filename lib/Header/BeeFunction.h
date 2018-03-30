@@ -39,6 +39,7 @@ BOOL BeeSystemVesionIsUp(CGFloat ver);
 NSInteger BeeAppVersionCompare(NSString *v1, NSString *v2);
 BOOL BeeAppIsApprovedByVersion(NSString* ver);
 NSString* RL(NSString* key);
+UIImage* BeeImage(NSString* name);
 
 #pragma mark 目录相关
 NSString* BeeAppFilePath(void); //应用目录
