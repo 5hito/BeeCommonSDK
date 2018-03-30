@@ -16,5 +16,6 @@
 #import "BeeClangWarning.h"
 #import "UIView+BeeFrame.h"
 #import "UIBarButtonItem+SXCreate.h"
+#import "BeeNotificationMacroHeader.h"
 
 #endif /* BeeCommonHeader_h */

@@ -9,9 +9,9 @@
 #ifndef BeeMacro_h
 #define BeeMacro_h
 
-#define BeeSTAUS_HEIGHT (20)
-#define BeeTOPBAR_HEGITH (64)
+#define BeeSTAUS_HEIGHT (BeeIsIphoneX? 44 : 20)
 #define BeeNAVIGATION_TOP_HEIGHT (44)//横屏32
+#define BeeTOPBAR_HEGITH (BeeSTAUS_HEIGHT+BeeNAVIGATION_TOP_HEIGHT)
 #define BeeToolBar_Height       49//(47)
 
 #define BeeScreenBounds ([UIScreen mainScreen].bounds)
