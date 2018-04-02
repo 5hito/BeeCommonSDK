@@ -13,12 +13,14 @@
 #define BeeNAVIGATION_TOP_HEIGHT (44)//横屏32
 #define BeeTOPBAR_HEGITH (BeeSTAUS_HEIGHT+BeeNAVIGATION_TOP_HEIGHT)
 #define BeeToolBar_Height       49//(47)
+#define BeeSafeAreaBottomHeight (BeeIsIphoneX? 34 : 0)
 
 #define BeeScreenBounds ([UIScreen mainScreen].bounds)
 #define BeeScreenWidth ([UIScreen mainScreen].bounds.size.width)
 #define BeeScreenHeight ([UIScreen mainScreen].bounds.size.height)
 #define BeeAppKeyWindow ([UIApplication sharedApplication].keyWindow)
 
+#define BeeIsIpad     (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define BeeIsIphone4  (CGRectGetHeight([UIScreen mainScreen].bounds) == 640 ? YES : NO)
 #define BeeIsIphone5  (CGRectGetHeight([UIScreen mainScreen].bounds) == 568 ? YES : NO)
 #define BeeIsIphone6  (CGRectGetHeight([UIScreen mainScreen].bounds) == 667 ? YES : NO)

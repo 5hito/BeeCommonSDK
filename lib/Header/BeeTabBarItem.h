@@ -14,6 +14,5 @@
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, strong) UIImage* normalImg;
 @property (nonatomic, strong) UIImage* selectImg;
-@property (nonatomic, assign) NSInteger tag;
 
 @end

@@ -80,7 +80,8 @@ BOOL BeeIsDefaultOverDueFile(NSString* file);
 
 #pragma mark 颜色处理
 //将颜色字符串转成UIColor #44a100 - > uicolor
-UIColor* BeeColorWithHexString(NSString *stringToConvert);
+UIColor* BeeColorWithHexString(NSString *colorString);
+UIColor* BeeColorWithHexStringAndAlpha(NSString *colorString, CGFloat alpha);
 
 #pragma mark Log
 void BeeLog(NSString *format, ...);

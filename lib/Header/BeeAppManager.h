@@ -10,6 +10,8 @@
 
 @interface BeeAppManager : NSObject
 
+@property (nonatomic, strong) UINavigationController* navigationCtrl;
+
 + (void)configure;
 + (instancetype)sharedManager;
 + (void)setShowNetChangeState:(BOOL)bShow;
