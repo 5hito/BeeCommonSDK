@@ -10,6 +10,7 @@
 @interface BeeNetWriter : NSObject
 
 - (void)appendInteger:(NSString*)key value:(NSInteger)value;
+- (void)appendFloat:(NSString*)key value:(CGFloat)value;
 - (void)appendInt64:(NSString *)key value:(long long)value;
 - (void)appendString:(NSString *)key value:(NSString*)value;
 - (void)appendBool:(NSString *)key value:(BOOL)value;

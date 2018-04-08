@@ -1,0 +1,47 @@
+#!/bin/sh
+
+#"获取当前脚本路径"
+basepath=$(cd `dirname $0`; pwd)
+cd ${basepath}
+
+podName=""
+files=$(ls)
+for filename in $files
+do
+    if [[ $filename =~ "podspec" ]]; then
+        podName=$filename
+        break
+    fi
+done
+
+
+
+if [ -n "$podName" ]; then
+    echo "文件名称: $podName"
+
+    version=$(sed -n 5p BeeCommonSDK.podspec | sed 's/\(.*\)"\(.*\)"\(.*\)/\2/g')
+    echo "当前版本号: $version"
+
+    git add *
+    git commit -m "$version"
+    git push origin master
+
+    git tag $version
+    git push —tags
+
+    pod trunk push $podName --allow-warnings
+
+    pod repo update
+    rm ~/Library/Caches/CocoaPods/search_index.json
+    pod search BeeCommonSDK
+
+else
+    echo "没有获取到podspec"
+fi
+
+
+#x=$(echo $CC | sed 's/\(.*\)"\(.*\)"\(.*\)/\2/g')
+
+
+
+
