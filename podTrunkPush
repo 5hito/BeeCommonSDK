@@ -27,7 +27,7 @@ if [ -n "$podName" ]; then
     git push origin master
 
     git tag $version
-    git push —tags
+    git push --tags
 
     pod trunk push $podName --allow-warnings
 
