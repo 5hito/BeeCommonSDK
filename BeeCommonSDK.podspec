@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "集合基本使用功能"
   s.description  = <<-DESC
     0.1.x:基础功能合集使用
@@ -26,5 +26,6 @@ Pod::Spec.new do |s|
   s.dependency "BeeAFNetSDK"
   s.dependency "WSProgressHUD"
   s.dependency "Masonry"
+  s.dependency "FDFullscreenPopGesture"
 
 end
