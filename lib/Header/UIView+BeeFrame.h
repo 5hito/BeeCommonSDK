@@ -1,6 +1,6 @@
 //
 //  UIView+CCFrame.h
-//  FriendsGrab
+//  BeeCommonSDK
 //
 //  Created by linshucan on 2017/11/12.
 //  Copyright © 2017年 lsc. All rights reserved.
