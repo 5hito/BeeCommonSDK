@@ -35,6 +35,7 @@ NSDictionary* BeeJsonStringTurnToDicionary(NSString* jsonStr);
 NSString* BeeAppBundleIdentifier(void);
 NSString* BeeAppVersion(void);
 NSString* BeeAppName(void);
+NSString* BeeSchemesByIdentifier(NSString* identifier);
 BOOL BeeSystemVesionIsUp(CGFloat ver);
 NSInteger BeeAppVersionCompare(NSString *v1, NSString *v2);
 BOOL BeeAppIsApprovedByVersion(NSString* ver);
