@@ -20,6 +20,9 @@
  */
 + (instancetype)sharedInstance;
 
+- (void)setPageIndicatorColor:(UIColor*)color;
+- (void)setCurrentPageIndicatorColor:(UIColor*)color;
+
 /**
  *  引导页图片,默认是标题是立即体验，颜色是白色
  *
