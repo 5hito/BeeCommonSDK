@@ -25,6 +25,9 @@
 @property (nonatomic, assign) CGFloat imageOffset;
 /** badgeValue */
 @property (nonatomic, strong) BeeBadgeValue *badgeValue;
+@property (nonatomic, assign) CGSize badgeSize;
+/** badgeOffset (如没有特殊需求, 请勿修改此属性, 此属性只有在控制器加载完成后有效) */
+@property (nonatomic, assign) CGPoint badgeOffset;
 /** type */
 @property (nonatomic, assign) BeeTabBarTypeLayout typeLayout;
 

@@ -14,6 +14,7 @@
 #define BeeTOPBAR_HEGITH (BeeSTAUS_HEIGHT+BeeNAVIGATION_TOP_HEIGHT)
 #define BeeToolBar_Height       49//(47)
 #define BeeSafeAreaBottomHeight (BeeIsIphoneX? 34 : 0)
+#define BeeBottomToolBarHeight (BeeToolBar_Height+BeeSafeAreaBottomHeight)
 
 #define BeeScreenBounds ([UIScreen mainScreen].bounds)
 #define BeeScreenWidth ([UIScreen mainScreen].bounds.size.width)
