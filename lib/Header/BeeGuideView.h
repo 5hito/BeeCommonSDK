@@ -28,7 +28,7 @@
  *
  *  @param images      引导页图片
  */
-- (void)showGuideViewWithImages:(NSArray *)images;
+- (void)setGuideViewWithImages:(NSArray *)images;
 
 /**
  *  引导页图片
@@ -37,7 +37,7 @@
  *  @param titleColor  文字颜色
  *  @param borderColor 按钮边框颜色
  */
-- (void)showGuideViewWithImages:(NSArray *)images
+- (void)setGuideViewWithImages:(NSArray *)images
            withButtonTitleColor:(UIColor *)titleColor
           withButtonBorderColor:(UIColor *)borderColor;
 
@@ -49,7 +49,7 @@
  *  @param bgColor     按钮背景颜色
  *  @param borderColor 按钮边框颜色
  */
-- (void)showGuideViewWithImages:(NSArray *)images
+- (void)setGuideViewWithImages:(NSArray *)images
            withButtonTitleColor:(UIColor *)titleColor
               withButtonBGColor:(UIColor *)bgColor
           withButtonBorderColor:(UIColor *)borderColor;
@@ -63,7 +63,7 @@
  *  @param bgColor     按钮背景颜色
  *  @param borderColor 按钮边框颜色
  */
-- (void)showGuideViewWithImages:(NSArray *)images
+- (void)setGuideViewWithImages:(NSArray *)images
                 withButtonTitle:(NSString *)title
            withButtonTitleColor:(UIColor *)titleColor
               withButtonBGColor:(UIColor *)bgColor
@@ -79,7 +79,7 @@
  *  @param bgColor     按钮背景颜色
  *  @param borderColor 按钮边框颜色
  */
-- (void)showGuideViewWithImages:(NSArray *)images
+- (void)setGuideViewWithImages:(NSArray *)images
                 withButtonTitle:(NSString *)title
            withButtonTitleColor:(UIColor *)titleColor
             withButtonTitleFont:(UIFont*)titleFont
@@ -97,12 +97,17 @@
  *  @param borderColor 按钮边框颜色
  *  @param offset 底部pagectrl偏移量
  */
-- (void)showGuideViewWithImages:(NSArray *)images
+- (void)setGuideViewWithImages:(NSArray *)images
                 withButtonTitle:(NSString *)title
            withButtonTitleColor:(UIColor *)titleColor
             withButtonTitleFont:(UIFont*)titleFont
               withButtonBGColor:(UIColor *)bgColor
           withButtonBorderColor:(UIColor *)borderColor
                   withBtnOffset:(CGFloat)offset;
+
+//展示引导图
+- (void)showGuide;
+//展示引导图 必须展示可设置
+- (void)showGuide:(BOOL)bShow;
 
 @end
