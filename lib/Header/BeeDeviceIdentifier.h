@@ -10,5 +10,6 @@
 @interface BeeDeviceIdentifier : NSObject
 
 + (NSString*)getDeviceIdentifier;
++ (NSString *)getDeviceAccessGroup;
 
 @end
