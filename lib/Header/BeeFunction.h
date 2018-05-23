@@ -86,3 +86,5 @@ UIColor* BeeColorWithHexStringAndAlpha(NSString *colorString, CGFloat alpha);
 
 #pragma mark Log
 void BeeLog(NSString *format, ...);
+BOOL BeeAppRunningInBackground(void);
+BOOL BeeAppRunningInForeground(void);
