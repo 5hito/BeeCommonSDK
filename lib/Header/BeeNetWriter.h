@@ -14,7 +14,7 @@
 - (void)appendInt64:(NSString *)key value:(long long)value;
 - (void)appendString:(NSString *)key value:(NSString*)value;
 - (void)appendBool:(NSString *)key value:(BOOL)value;
-- (void)appendDic:(NSDictionary*) dic;
+- (void)appendDic:(NSDictionary*)dic;
 
 - (NSString*)url:(NSString*)actionID;
 + (NSMutableDictionary*)splitParams:(NSString*)url;

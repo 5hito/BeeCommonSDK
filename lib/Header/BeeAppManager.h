@@ -11,6 +11,7 @@
 @interface BeeAppManager : NSObject
 
 @property (nonatomic, strong) UINavigationController* navigationCtrl;
+@property (nonatomic, strong) NSString* netStatus;
 
 + (void)configure;
 + (instancetype)sharedManager;
