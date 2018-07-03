@@ -15,6 +15,7 @@
 #import "BeeFunction.h"
 #import "BeeClangWarning.h"
 #import "UIView+BeeFrame.h"
+#import "NSString+BeeFont.h"
 #import "UIBarButtonItem+SXCreate.h"
 #import "BeeNotificationMacroHeader.h"
 

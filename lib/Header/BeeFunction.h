@@ -65,7 +65,8 @@ UIImage* BeeBundleImage(NSString* imgFile);
 UIImage* BeeHandleGrayImage(UIImage *sourceImage);
 
 #pragma mark 时间相关
-NSInteger BeeCurrentTime(void);
+NSInteger BeeCurrentMilliSecondTime(void);//毫秒
+NSInteger BeeCurrentTime(void);//秒
 NSString* BeeTimeSince1970(void);
 NSString* BeeTimeStringByTimeInterval(NSInteger timeInterval);
 NSString* BeeTimeStringByString(NSString* timeString);
