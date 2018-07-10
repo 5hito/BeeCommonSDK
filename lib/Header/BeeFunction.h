@@ -89,3 +89,15 @@ UIColor* BeeColorWithHexStringAndAlpha(NSString *colorString, CGFloat alpha);
 void BeeLog(NSString *format, ...);
 BOOL BeeAppRunningInBackground(void);
 BOOL BeeAppRunningInForeground(void);
+
+#pragma mark keychain
+NSString* BeeGetKeychainDefaultService(void);//获取默认keychain服务
+NSString* BeeGetStoreValueWithService(NSString* key, NSString* service, NSError** error);//获取存在keychain中的值
+NSString* BeeGetStoreValue(NSString* key, NSError** error);//获取存在keychain中的值，默认采用service
+BOOL BeeStoreOrUpdateValueWithService(NSString* key, NSString* value, NSString* service, BOOL update, NSError** error);////存值至keychain
+BOOL BeeStoreValueWithService(NSString* key, NSString* value, NSString* service, NSError** error);//存值至keychain，默认强制更新
+BOOL BeeStoreValue(NSString* key, NSString* value, NSError** error);//存值至keychain，默认采用service，并且强制更新
+BOOL BeeDeleteStoreItemWithService(NSString* key, NSString* service, NSError** error);//删除keychain中值
+BOOL BeeDeleteStoreItem(NSString* key, NSError** error);//删除keychain中值，默认采用service
+BOOL BeePurgeItemWithService(NSString* service, NSError** error);//清除keychain中service的全部值
+
