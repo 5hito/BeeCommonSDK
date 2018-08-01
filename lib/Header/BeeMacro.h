@@ -22,7 +22,7 @@
 #define BeeAppKeyWindow ([UIApplication sharedApplication].keyWindow)
 
 #define BeeIsIpad     (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-#define BeeIsIphone4  (CGRectGetHeight([UIScreen mainScreen].bounds) == 640 ? YES : NO)
+#define BeeIsIphone4  (CGRectGetHeight([UIScreen mainScreen].bounds) == 480 ? YES : NO)
 #define BeeIsIphone5  (CGRectGetHeight([UIScreen mainScreen].bounds) == 568 ? YES : NO)
 #define BeeIsIphone6  (CGRectGetHeight([UIScreen mainScreen].bounds) == 667 ? YES : NO)
 #define BeeIsIphone6P (CGRectGetHeight([UIScreen mainScreen].bounds) == 736 ? YES : NO)
@@ -30,6 +30,10 @@
 
 #define BeeIsUpIphone5 (CGRectGetHeight([UIScreen mainScreen].bounds) > 568 ? YES : NO)
 #define BeeIsUpIphone6 (CGRectGetHeight([UIScreen mainScreen].bounds) > 667 ? YES : NO)
+#define BeeIphone4Width    (320) //640
+#define BeeIphone4Height   (480) //960
+#define BeeIphone5Width    (320) //640
+#define BeeIphone5Height   (568) //1136
 #define BeeIphone6Width    (375) //750
 #define BeeIphone6Height   (667) //1334
 #define BeeIphone6PWidth   (414) //1242
