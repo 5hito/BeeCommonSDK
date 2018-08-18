@@ -17,6 +17,11 @@
 - (void)appendDic:(NSDictionary*)dic;
 
 - (NSString*)url:(NSString*)actionID;
++ (NSString*)signUrl:(NSString*)url;
 + (NSMutableDictionary*)splitParams:(NSString*)url;
+
+//兼容旧版本
+- (NSString*)orderUrl:(NSString*)actionID;
++ (NSString*)orderSignUrl:(NSString*)url;
 
 @end

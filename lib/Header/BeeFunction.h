@@ -61,6 +61,7 @@ UIImage* BeeResizableImageWithCapInsets(UIEdgeInsets insets,UIImage* img);
 UIImage* BeeResizableImageWithImg(UIImage* img);
 UIImage* BeeImageFromViewByRect(UIView* view, CGRect rect);
 UIImage* BeeThumbImgFromImage(UIImage* image);
+UIImage* BeeRadiusThumbImgFromImage(UIImage* image, CGFloat cornerRadius);
 UIImage* BeeBundleImage(NSString* imgFile);
 UIImage* BeeHandleGrayImage(UIImage *sourceImage);
 
