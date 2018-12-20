@@ -2,12 +2,12 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "1.5.1"
+  s.version      = "1.5.2"
   s.summary      = "集合基本使用功能"
   s.description  = <<-DESC
     0.1.x:基础功能合集使用
     1.x.x:基础功能修改
-    1.5.x:bitcode
+    1.5.x:bitcode/tabbar可动态更改
                    DESC
 
   s.homepage     = "https://github.com/5hito/BeeCommonSDK"

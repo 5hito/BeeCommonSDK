@@ -21,6 +21,9 @@ typedef void (^BeeCustomBtnBlock) (UIButton *btn, NSInteger index);
 - (void)initTabBarView:(NSArray*)array;
 - (void)initTabBarView:(NSArray*)array WithSelectedIndex:(NSInteger)index;
 
+//更新tabbar相关信息
+- (void)updateTabBarItems:(NSArray*)array;
+
 /**
  对单个进行圆角设置
  @param radius 圆角值

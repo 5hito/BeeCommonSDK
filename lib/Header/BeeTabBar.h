@@ -26,6 +26,7 @@
 @property (nonatomic, assign) NSInteger selectedIndex;
 
 - (void)createTabBarView:(NSArray<BeeTabBarItem*>*) items;
+- (void)updateTabBarView:(NSArray<BeeTabBarItem*>*) items;
 
 @end
 

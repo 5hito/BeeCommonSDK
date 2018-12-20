@@ -49,6 +49,8 @@
 #define BeeIphoneXSMaxHeight    (896) //2688
 
 #define BeeGrayColor ([UIColor colorWithRed:215/255.0f green:215/255.0f blue:215/255.0f alpha:0.5])
+
+//arc4random() 与 arc4random_uniform() 区别，后者直接生成某个数以内的值
 #define BeeRandomColor ( CGFloat red = ( arc4random() % 256 / 255.0 ); CGFloat green = ( arc4random() % 256 / 255.0 ); CGFloat blue = ( arc4random() % 256 / 255.0 ); return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f]; )
 
 //默认过期时间 24h
