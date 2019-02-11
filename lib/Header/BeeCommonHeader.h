@@ -18,5 +18,6 @@
 #import "NSString+BeeFont.h"
 #import "UIBarButtonItem+SXCreate.h"
 #import "BeeNotificationMacroHeader.h"
+#import "UIColor+BeeColor.h"
 
 #endif /* BeeCommonHeader_h */

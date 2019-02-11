@@ -8,6 +8,20 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#pragma mark 基础
+void BeeLog(NSString *format, ...);
+NSString* RL(NSString* key);
+UIImage* BeeImage(NSString* name);
+BOOL BeeAppRunningInBackground(void);//应用是否处于后台
+BOOL BeeAppRunningInForeground(void);//应用是否处于前台
+NSString* BeeSystemLocale(void);//获取手机设置地区
+BOOL BeeIsInChinaLocale(void);//是否在中国地区
+BOOL BeeIsZhLanguage(void);//是否是中文
+BOOL BeeIsJaLanguage(void);//是否是日文
+BOOL BeeIsRuLanguage(void);//是否是俄文
+BOOL BeeIsDeLanguage(void);//是否是德文
+NSString* BeeGetTemperatureUnit(void);//获取温度单位：Celsius(摄氏度) or Fahrenheit(华氏度)
+
 #pragma mark 字符串encode、decode
 NSString* BeeDecodeStringFromString(NSString* string);
 NSString* BeeEncodeStringFromString(NSString* string);
@@ -39,8 +53,6 @@ NSString* BeeSchemesByIdentifier(NSString* identifier);
 BOOL BeeSystemVesionIsUp(CGFloat ver);
 NSInteger BeeAppVersionCompare(NSString *v1, NSString *v2);
 BOOL BeeAppIsApprovedByVersion(NSString* ver);
-NSString* RL(NSString* key);
-UIImage* BeeImage(NSString* name);
 
 #pragma mark 目录相关
 NSString* BeeAppFilePath(void); //应用目录
@@ -64,6 +76,7 @@ UIImage* BeeThumbImgFromImage(UIImage* image);
 UIImage* BeeRadiusThumbImgFromImage(UIImage* image, CGFloat cornerRadius);
 UIImage* BeeBundleImage(NSString* imgFile);
 UIImage* BeeHandleGrayImage(UIImage *sourceImage);
+UIImage* BeeImageJPEGRepresentation(UIImage* image, CGFloat compressionQuality);//压缩图片，有些图片过大无法分享，故进行压缩
 
 #pragma mark 时间相关
 NSInteger BeeCurrentMilliSecondTime(void);//毫秒
@@ -85,11 +98,6 @@ BOOL BeeIsDefaultOverDueFile(NSString* file);
 //将颜色字符串转成UIColor #44a100 - > uicolor
 UIColor* BeeColorWithHexString(NSString *colorString);
 UIColor* BeeColorWithHexStringAndAlpha(NSString *colorString, CGFloat alpha);
-
-#pragma mark Log
-void BeeLog(NSString *format, ...);
-BOOL BeeAppRunningInBackground(void);
-BOOL BeeAppRunningInForeground(void);
 
 #pragma mark keychain
 NSString* BeeGetKeychainDefaultService(void);//获取默认keychain服务
