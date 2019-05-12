@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "BeeSDKDefines.h"
 
 #pragma mark 基础
 void BeeLog(NSString *format, ...);
@@ -96,8 +97,9 @@ BOOL BeeIsDefaultOverDueFile(NSString* file);
 
 #pragma mark 颜色处理
 //将颜色字符串转成UIColor #44a100 - > uicolor
-UIColor* BeeColorWithHexString(NSString *colorString);
-UIColor* BeeColorWithHexStringAndAlpha(NSString *colorString, CGFloat alpha);
+//此方法不适用带透明度，请使用UIColor+BeeColor中的拓展类方法
+UIColor* BeeColorWithHexString(NSString *colorString) BEE_DEPRECATED_MSG_ATTRIBUTE("使用UIColor+BeeColor中的拓展类方法BeeColorWithHexString");
+UIColor* BeeColorWithHexStringAndAlpha(NSString *colorString, CGFloat alpha) BEE_DEPRECATED_MSG_ATTRIBUTE("使用UIColor+BeeColor中的拓展类方法BeeColorWithHexString");
 
 #pragma mark keychain
 NSString* BeeGetKeychainDefaultService(void);//获取默认keychain服务

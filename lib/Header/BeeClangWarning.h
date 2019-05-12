@@ -11,14 +11,6 @@
 
 //具体参数可参看文档：http://fuckingclangwarnings.com/
 
-#if __has_include("KochavaTracker.h")
-    #import "KochavaTracker.h"
-
-    #define BeeKochavaTrackerCode(code) code
-#else
-    #define BeeKochavaTrackerCode(code)
-#endif
-
 //方法调用警告
 #define Bee_Warc_PerformSelector_Leaks(code) \
             _Pragma("clang diagnostic push") \
