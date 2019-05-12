@@ -70,8 +70,10 @@
 #if __has_include("KochavaTracker.h")
     #import "KochavaTracker.h"
     #define BeeKochavaTrackerCode(code) code
+    #define BeeHasIncludeKochavaSDK 1
 #else
     #define BeeKochavaTrackerCode(code)
+    #define BeeHasIncludeKochavaSDK 0
 #endif
 
 #endif /* BeeSDKDefines_h */
