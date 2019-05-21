@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "1.6.2"
+  s.version      = "1.6.3"
   s.summary      = "集合基本使用功能"
   s.description  = <<-DESC
     0.1.x:基础功能合集使用
@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
     1.5.x:bitcode/tabbar可动态更改
     1.6.0:添加Kochava定义
     1.6.1/2:添加宏定义和方法废弃使用
+    1.6.3:添加UserDefaults
                    DESC
 
   s.homepage     = "https://github.com/5hito/BeeCommonSDK"
