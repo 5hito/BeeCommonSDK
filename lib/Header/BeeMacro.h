@@ -31,7 +31,7 @@
 
 #define BeeIsUpIphone5 (CGRectGetHeight([UIScreen mainScreen].bounds) > 568 ? YES : NO)
 #define BeeIsUpIphone6 (CGRectGetHeight([UIScreen mainScreen].bounds) > 667 ? YES : NO)
-#define BeeIsUpIphoneX (CGRectGetHeight([UIScreen mainScreen].bounds) >= 812 ? YES : NO)
+#define BeeIsUpIphoneX (BeeIsIpad ? NO : (CGRectGetHeight([UIScreen mainScreen].bounds) >= 812 ? YES : NO))
 
 #define BeeIphone4Width         (320) //640
 #define BeeIphone4Height        (480) //960
