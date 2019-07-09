@@ -112,3 +112,5 @@ BOOL BeeDeleteStoreItemWithService(NSString* key, NSString* service, NSError** e
 BOOL BeeDeleteStoreItem(NSString* key, NSError** error);//删除keychain中值，默认采用service
 BOOL BeePurgeItemWithService(NSString* service, NSError** error);//清除keychain中service的全部值
 
+#pragma mark UIViewController
+UIViewController* BeeGetCurrentViewController(void);
