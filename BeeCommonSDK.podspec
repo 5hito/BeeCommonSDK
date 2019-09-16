@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeCommonSDK"
-  s.version      = "1.6.9"
+  s.version      = "1.7.0"
   s.summary      = "集合基本使用功能"
   s.description  = <<-DESC
     0.1.x:基础功能合集使用
@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
     1.6.1/2:添加宏定义和方法废弃使用
     1.6.3:添加UserDefaults
     1.6.4:启动任务管理
+    1.7.0:修复iOS13bug
                    DESC
 
   s.homepage     = "https://github.com/5hito/BeeCommonSDK"
