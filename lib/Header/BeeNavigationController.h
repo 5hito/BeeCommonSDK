@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIBarButtonItem+SXCreate.h"
 
 @interface BeeNavigationController : UINavigationController
 

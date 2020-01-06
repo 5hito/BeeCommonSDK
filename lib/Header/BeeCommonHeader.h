@@ -29,6 +29,5 @@
 
 //第三方
 #import "UINavigationController+FDFullscreenPopGesture.h"
-#import "UIBarButtonItem+SXCreate.h"
 
 #endif /* BeeCommonHeader_h */
